@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+	<group id="klevu_xml_feed_cron">
+		<job instance="Bluethink\KlevuXmlFeed\Cron\ExportXml" method="execute" name="klevu_xml_feed_generate">
+			<schedule>* * * * *</schedule>
+		</job>
+	</group>
+</config>
